@@ -1,8 +1,7 @@
 import { useEffect } from "react";
 import GitHubIcon from '@material-ui/icons/GitHub'
 import EmailIcon from '@material-ui/icons/Email';
-// import LinkedInIcon from '@material-ui/icons/LinkedIn'
-// import { HiOutlineMail } from 'react-icons/fa'
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
 // import { FaAngellist } from 'react-icons/fa'
 import { info } from '../../context/appendix'
 import Aos from 'aos'
@@ -24,15 +23,15 @@ const Info = () => {
         </h1>
       )}
 
-      {title && <h2 className='info_title'>A {title}.</h2>}
+      {title && <h2 className='info-title'>A {title}.</h2>}
 
-      {description && <p className='info_desc'>{description}</p>}
+      {description && <p className='info-desc'>{description}</p>}
 
-      <div classNmae='info_contact center'>
+      <div classNmae='info-contact center'>
 
         {resume && (
           <a href='/Test-Resume.PDF' target='_blank'>
-            <span type='button' className='btn btn-outline'>
+            <span type='button' className='btn btn--outline'>
               Resume
             </span>
           </a>
@@ -51,6 +50,27 @@ const Info = () => {
                 <GitHubIcon />
               </a>
             )}
+
+            {contact.linkedin && (
+              <a
+                href={contact.linkedin}
+                target='_blank'
+                rel='noreferrer'
+                aria-label='linkedin'
+                className='link link--icon'
+              >
+                <LinkedInIcon />
+              </a>
+            )}
+
+            {/* {contact .email && (
+              <a
+              href={`mailto:${contact.email}`}
+              target='_blank'
+              >
+                <EmailIcon />
+              </a>
+            )} */}
           </>
         )}
       </div>
