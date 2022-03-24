@@ -1,13 +1,14 @@
-import React from 'react';
+// import React from 'react';
 import { render } from 'react-dom';
-import './index.css';
+import { ThemeProvider } from './context/theme';
 import App from './App';
+import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 render(
-  <React.StrictMode>
+  <ThemeProvider>
     <App />
-  </React.StrictMode>,
+  </ThemeProvider>,
   document.getElementById('root')
 );
 
