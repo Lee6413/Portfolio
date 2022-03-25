@@ -63,14 +63,15 @@ const Info = () => {
               </a>
             )}
 
-            {/* {contact .email && (
+            {contact.email && (
               <a
               href={`mailto:${contact.email}`}
               target='_blank'
+              className='link link--icon'
               >
                 <EmailIcon />
               </a>
-            )} */}
+            )}
           </>
         )}
       </div>
