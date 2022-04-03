@@ -54,6 +54,48 @@ const skills = [
   { type: 'Heroku', logo: <SiHeroku className='skills__icon' />, percent: 60 }
 ]
 
+const projects = [
+  {
+    name: 'TinyBnB',
+    description:
+      'A full stack Airbnb clone where users can book and host places, and give review to places they have stayed.',
+    points: [
+      'Integrated Google Maps API to dynamically present spot locations based on user parameters.',
+      'Harnessed the unidirectional state management of Redux to simplify React components and directly manage data for form inputs and form submissions.',
+      'Incorporated React-Redux container and Redux selector patterns to architect highly scalable and uni-directional front-end state management.'
+    ],
+    stack: ['React/Redux', 'JavaScript', 'Python', 'Flask', 'HTML', 'CSS', 'PostgresSQL', 'Google Map API'],
+    sourceCode: 'https://github.com/wylin94/AAw19d1-Tinybnb-Clone',
+    livePreview: 'https://wyl-tinybnb.herokuapp.com/',
+    photo: 'https://i.ibb.co/gj1GWdb/Screenshot-2022-03-24-143514.png'
+  },
+  {
+    name: 'Aniflix',
+    description:
+      'A full stack Netflix clone where users can browse anime content.',
+    points: [
+      'Integrated React Player with Redux to playback video content by dispatching actions to retrieve the appropriate data for the info requested, allowing users to view clips of desired shows.',
+      'Implemented custom search by frontloading all available show names into Redux to be filtered in the front end.',
+      'Simplified persisting a user’s profile state by utilizing local storage in order to allow multiple profiles under one user to retain their own watchlists.'
+    ],
+    stack: ['React/Redux', 'JavaScript', 'Python', 'Flask', 'PostgresSQL', 'SQLAlchemy', 'HTML', 'CSS'],
+    sourceCode: 'https://github.com/Lee6413/Aniflix',
+    livePreview: 'https://aniflix-aa.herokuapp.com/',
+    photo: 'https://i.ibb.co/fY6qF0L/Screenshot-2022-03-24-143916.png'
+  },
+  {
+    name: 'Snapr',
+    description:
+      'Social photography website focused on photographs. Adaptation of Flickr',
+    points: [
+      'Achieved 50% faster individual React component load times by restructuring API queries to prevent images above a designated resolution/restructuring a complex database query into many single responsibility querie',
+      'Ensured user privacy through front and backend authentication by employing React Router and password encryption via Bcrypt, allowing users to only edit their information when logged in',
+    ],
+    stack: ['React/Redux', 'Express', 'Sequelize', 'postgreSQL', 'HTML', 'CSS'],
+    sourceCode: 'https://github.com/Lee6413/Snapr',
+    livePreview: 'https://snapr-lee.herokuapp.com/',
+    photo: 'https://i.ibb.co/X5FSDmM/Screenshot-2022-03-24-143802.png'
+  },
+]
 
-
-export { header, info, skills }
+export { header, info, skills, projects }

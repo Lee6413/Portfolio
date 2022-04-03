@@ -1,4 +1,4 @@
-import { ThemeContext } from '../../contexts/theme';
+import { ThemeContext } from '../../context/theme';
 import { useContext, useEffect, useState } from 'react';
 import { projects, skills, info } from '../../context/appendix';
 import Brightness2Icon from '@material-ui/icons/Brightness2'
@@ -7,7 +7,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import './Navbar.css';
+import './navbar.css';
 
 const Navbar = () => {
   const { contact } = info
