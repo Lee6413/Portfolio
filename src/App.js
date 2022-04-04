@@ -4,6 +4,7 @@ import Info from './components/Info/info';
 import Header from './components/Header/header'
 import Skills from './components/Skills/skills'
 import Contact from './components/Contact/contact'
+import Footer from './components/Footer/footer'
 import './App.css';
 
 const App = () => {
@@ -19,6 +20,8 @@ const App = () => {
         <Skills />
         <Contact />
       </main>
+
+      <Footer />
     </div>
   );
 }
