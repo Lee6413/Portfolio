@@ -1,0 +1,129 @@
+.project {
+  padding: 2em;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s linear;
+  transform: translateX(180px);
+}
+
+.project:hover {
+  transform: translate(180px, -4px);
+}
+
+.bullet-points {
+  padding: 1.3em;
+  margin: 0 auto;
+  transition: transform 0.2s linear;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transform: translate(-160px, -20px);
+  height: 337px;
+}
+
+.project__photo {
+  width: 100%;
+  height: 337px;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  transition: transform 0.5s linear;
+  transform: translate(200px);
+}
+
+.active-photo {
+  cursor: pointer;
+  z-index: 3;
+  transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  box-shadow: var(--shadow);
+}
+
+.active-photo:hover {
+  transform: translate(200px, -5px);
+}
+
+.unactive-photo {
+  z-index: 2;
+  transform: translate(217px, -21px);
+  transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  border: 1px solid var(--clr-primary);
+}
+
+.active-bullets {
+  cursor: pointer;
+  z-index: 3;
+  transform: translate(-177px, 0px);
+  transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  box-shadow: var(--shadow);
+  width: 345.33px;
+}
+
+.active-bullets:hover {
+  transform: translate(-177px, -5px);
+}
+
+.unactive-bullets {
+  z-index: 2;
+  transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  border: 1px solid var(--clr-primary);
+  width: 345.33px;
+}
+
+.project__description {
+  margin-top: 1em;
+}
+
+.project__stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.2em 0;
+}
+
+.project__stack-item {
+  margin: 0.5em;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--clr-fg-alt);
+}
+
+.project .link--icon {
+  margin-left: 0.5em;
+}
+
+.p__smaller {
+  font-size: .8rem;
+  margin: 0px;
+}
+
+.point {
+  color: var(--clr-primary);
+  margin-right: 10px;
+}
+
+.click-me-details {
+  color: var(--clr-primary);
+  background-color: var(--clr-bg);
+  position: relative;
+  top: -33px;
+  right: -180px;
+  width: fit-content;
+  padding: 0px 5px;
+  cursor: pointer;
+}
+
+.click-me-photo {
+  cursor: pointer;
+  color: var(--clr-primary);
+  background-color: var(--clr-bg);
+  position: relative;
+  top: -13px;
+  right: -207px;
+  width: fit-content;
+  padding: 0px 5px;
+}
+
+.click-me-photo:hover, .click-me-details:hover {
+  color: var(--clr-fg-alt);
+}
