@@ -1,0 +1,32 @@
+.about-me {
+    flex-direction: column;
+    margin-top: 3em;
+    margin-bottom: 15em;
+}
+
+.about-me > h2 {
+    margin-bottom: 2.4em;
+}
+
+.about-me p {
+    margin-bottom: 20px;
+    width: 86%;
+    font-size: 16px;
+}
+
+.avatar {
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s linear;
+}
+
+.about-me__content {
+    display: flex;
+    width: 90%;
+}
+
+.span-color {
+    color: var(--clr-primary);
+}
